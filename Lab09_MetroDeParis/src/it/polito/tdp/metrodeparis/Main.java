@@ -1,5 +1,6 @@
 package it.polito.tdp.metrodeparis;
 
+import it.polito.tdp.metrodeparis.model.Model;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,6 +17,8 @@ public class Main extends Application {
 
 			// TODO: Set the model
 
+			Model model= new Model();
+			controller.setModel(model);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
